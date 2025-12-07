@@ -87,9 +87,6 @@ export function useContract() {
     "getOwnedObjects",
     {
       owner: currentAccount?.address || "",
-      filter: {
-        StructType: `${packageId}::${CONTRACT_MODULE}::Idea`,
-      },
       options: {
         showContent: true,
         showType: true,
