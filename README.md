@@ -135,6 +135,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 For questions or issues, please open an issue on GitHub or contact the maintainers.
 
+## Contract address
+0x47b416f0aa7901e561086213c055ebf86075e0985f0da60a480924b08083a68e
 ---
 
 **Built with ❤️ on IOTA blockchain**
