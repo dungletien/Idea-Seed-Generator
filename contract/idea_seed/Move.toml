@@ -1,0 +1,9 @@
+[package]
+name = "idea_seed"
+edition = "2024.beta"
+
+[dependencies]
+Iota = { git = "https://github.com/iotaledger/iota.git", subdir = "crates/iota-framework/packages/iota-framework", rev = "mainnet" }
+
+[addresses]
+idea_seed = "0x0"
