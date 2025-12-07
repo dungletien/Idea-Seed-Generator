@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "@radix-ui/themes/styles.css";
-import { Theme } from "@radix-ui/themes";
 import "./globals.css";
 import { Providers } from "@/components/Provider";
 
@@ -17,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Providers>
-          <Theme>{children}</Theme>
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

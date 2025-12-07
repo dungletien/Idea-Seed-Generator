@@ -25,22 +25,24 @@ A decentralized application (dApp) built on the IOTA blockchain that enables use
    npm install
    ```
 
-2. **Deploy the smart contract**:
-   ```bash
-   npm run iota-deploy
-   ```
-
-3. **Update configuration**:
-   - Open `lib/config.ts`
-   - Replace `YOUR_PACKAGE_ID_HERE` with your deployed contract's package ID
-
-4. **Run the development server**:
+2. **Run the development server**:
    ```bash
    npm run dev
    ```
 
-5. **Open your browser**:
+3. **Open your browser**:
    Navigate to [http://localhost:3000](http://localhost:3000)
+
+4. **Connect your IOTA wallet**:
+   - Install IOTA Wallet extension in your browser
+   - Click "Connect Wallet" button
+   - Follow the prompts to connect
+
+5. **(Optional) Deploy your own smart contract**:
+   ```bash
+   npm run iota-deploy
+   ```
+   Then update the package ID in `lib/config.ts`
 
 ## 📁 Project Structure
 

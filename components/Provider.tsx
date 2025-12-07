@@ -1,25 +1,28 @@
 "use client";
 
+import "@iota/dapp-kit/dist/index.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { IotaClientProvider, WalletProvider } from "@iota/dapp-kit";
-import { getFullnodeUrl } from "@iota/iota-sdk/client";
-import { useState } from "react";
+import { Theme } from "@radix-ui/themes";
+import { networkConfig } from "@/lib/config";
+import { ReactNode } from "react";
 
 const queryClient = new QueryClient();
 
-export function Providers({ children }: { children: React.ReactNode }) {
-  const [networks] = useState({
-    testnet: { url: getFullnodeUrl("testnet") },
-    mainnet: { url: getFullnodeUrl("mainnet") },
-  });
+interface ProvidersProps {
+  children: ReactNode;
+}
 
+export function Providers({ children }: ProvidersProps) {
   return (
-    <QueryClientProvider client={queryClient}>
-      <IotaClientProvider networks={networks} defaultNetwork="testnet">
-        <WalletProvider autoConnect>
-          {children}
-        </WalletProvider>
-      </IotaClientProvider>
-    </QueryClientProvider>
+    <Theme appearance="dark">
+      <QueryClientProvider client={queryClient}>
+        <IotaClientProvider networks={networkConfig} defaultNetwork="testnet">
+          <WalletProvider autoConnect>
+            {children}
+          </WalletProvider>
+        </IotaClientProvider>
+      </QueryClientProvider>
+    </Theme>
   );
 }
