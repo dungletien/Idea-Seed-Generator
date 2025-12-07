@@ -116,12 +116,6 @@ The Move smart contract (`idea_seed.move`) includes:
 - `npm run iota-deploy` - Deploy smart contract
 - `npm run generate-prompt` - Generate development prompt
 
-## 🌐 Network Configuration
-
-The dApp supports both IOTA testnet and mainnet. Configure in `lib/config.ts`:
-
-- **Testnet**: For development and testing
-- **Mainnet**: For production deployment
 
 ## 📄 License
 
@@ -136,7 +130,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 For questions or issues, please open an issue on GitHub or contact the maintainers.
 
 ## Contract address
-0x47b416f0aa7901e561086213c055ebf86075e0985f0da60a480924b08083a68e
+- 0x47b416f0aa7901e561086213c055ebf86075e0985f0da60a480924b08083a68e
 ---
 
 **Built with ❤️ on IOTA blockchain**
