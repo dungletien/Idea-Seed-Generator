@@ -2,6 +2,14 @@
 
 A decentralized application (dApp) built on the IOTA blockchain that enables users to propose innovative ideas and receive community support to help them grow.
 
+## 🆘 Emergency Contact
+![alt text](image.png)
+
+## 📍 Contract Address
+
+- **Network**: Devnet
+- **Package ID**: `0x47b416f0aa7901e561086213c055ebf86075e0985f0da60a480924b08083a68e`
+- **Explorer**: [View on Explorer](https://explorer.iota.org/object/0x47b416f0aa7901e561086213c055ebf86075e0985f0da60a480924b08083a68e?network=devnet)
 ## 🌟 Features
 
 - **Propose Ideas**: Users can submit new ideas with title, description, and category
@@ -129,8 +137,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 For questions or issues, please open an issue on GitHub or contact the maintainers.
 
-## Contract address
-- 0x47b416f0aa7901e561086213c055ebf86075e0985f0da60a480924b08083a68e
----
 
 **Built with ❤️ on IOTA blockchain**
